@@ -1,0 +1,23 @@
+{
+  "name": "dev-quai-antique",
+  "version": "1.0.0",
+  "description": "ce site est un site vitrine pour le restaurant Quai antique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adesombre/dev-quai-antique.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adesombre/dev-quai-antique/issues"
+  },
+  "homepage": "https://github.com/adesombre/dev-quai-antique#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
