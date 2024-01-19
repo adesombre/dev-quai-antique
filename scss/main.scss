@@ -12,9 +12,10 @@ html{
     min-height: 100%;
 }
 main{
-    margin-bottom: 250px;
+    margin-bottom: 270px;
 }
 .hero-scene{
+    margin-bottom: 15px;
     position: relative;
     &::before {
         content:"";
@@ -79,4 +80,11 @@ footer.footer{
         
 
     }
+}
+.form-label{
+
+    color:$primary;
+}
+button {
+    
 }
