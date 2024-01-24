@@ -1,0 +1,55 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Ma reservation</h1>
+    </div>
+</div>
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="dateInput" class="form-label">date</label>
+            <input type="text" class="form-control" id="dateInput" placeholder="entrer la date" value="12/05/2023">
+            <div class="mb-3">
+                <label for="timeInput" class="form-label">heure</label>
+                <input type="tme" class="form-control" id="lastnameInput" placeholder="entrer l'heure" value="12:12">
+                <label for="nbconvivesInput" class="form-label">nombres personnes
+                </label>
+                <input type="number" class="form-control" id="nbconvivesInput"
+                    placeholder="combien vous etes de covives habituellement?" value="5">
+            </div>
+            <label for="AllergieInput" class="form-label">Allergies</label>
+            <input type="text" class="form-control" id="AllergieInput"
+                placeholder="entrer votre allergie(fruits de mer, arachide...)" value="banane">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="midiRadio">
+                <label class="form-check-label" for="midiradio">
+                    Midi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="soirRadio" checked>
+                <label class="form-check-label" for="soirRadio">
+                    Soir
+                </label>
+            </div>
+            <div class="mb-3">
+                <label class="form-select-label" for="selectHour">choix de l'horaire</label>
+                <select class="form-select"  name="" id="selectHour">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary ">Réserver</button>
+            <button type="button" class="btn btn-danger">Annuler</button>
+        </div>
+    </form>
+
+</div>
