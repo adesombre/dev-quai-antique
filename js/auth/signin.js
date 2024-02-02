@@ -1,49 +1,24 @@
-const emailinput =document.getElementById("EmailInput");
-const passinput = document.getElementById("PasswordInput");
-const btnvalidationconnexion =document.getElementById("btn-validate-connexion");
+const email =document.getElementById("EmailInput");
+const password =document.getElementById("PasswordInput");
+const btnSignin = document.getElementById("btn-signin");
 
-emailinput.addEventListener("keyup", validateForm);
-passinput.addEventListener("keyup", validateForm);
+btnSignin.addEventListener("click", checkCredentials);
 
-function validateForm(){
-  const emailOK= validateEmail(emailinput);
-  const passOK = validateRequired(passinput);
-  if (emailOK && passOK){
-    btnvalidationconnexion.disabled= false;
-   
-
-}else {
-    btnvalidationconnexion.disabled= true;
-    
-}
-  
-}
-
-function validateRequired(input){
-
-    if (input.value != ""){
-        input.classList.add("is-valid");
-        input.classList.remove("is-invalid");
-        return true;
+function checkCredentials(){
+    //ici il faudras appeler une api pour verifier les credentials
+    if (email.value == "alain@gmail.com" && password.value =="123456Aa@")
+    {   
+       
+        //il faudras recupere le vrai token
+        const token ="arzarezetstdrtdytfjghgvbljnlkjjklhiuguygiugiyfuihgkhiyfuftdyturfgh,bkj";
+        setToken(token);
+        //placer ce token en cooki
+        window.location.replace("/");
     }else {
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        return false;
+        email.classList.add("is-invalid");
+        password.classList.add("is-invalid");
+        
+        alert("vos donnee ne corresponde pas au compte");
     }
-}
 
-function validateEmail(input) {
-    const regexemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const mailuser = input.value;
-    if (mailuser.match(regexemail)){
-        input.classList.add("is-valid");
-        input.classList.remove("is-invalid");
-        return true;
-    }else {
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        return false;
-    }
-    
-    
 }
