@@ -13,6 +13,7 @@ function checkCredentials(){
         const token ="arzarezetstdrtdytfjghgvbljnlkjjklhiuguygiugiyfuihgkhiyfuftdyturfgh,bkj";
         setToken(token);
         //placer ce token en cooki
+        setCookie(roleCockieName, "client", 7);
         window.location.replace("/");
     }else {
         email.classList.add("is-invalid");
